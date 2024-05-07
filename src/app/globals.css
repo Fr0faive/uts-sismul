@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 15px;
+  background-color: black;
+  outline: none;
+}
+/* The slider handle (webkit - applies to Chrome, Opera, Safari, Edge). */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: blue;
+  cursor: pointer;
+}
+/* moz - applies to Firefox.  */
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
